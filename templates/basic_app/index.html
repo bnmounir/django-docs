@@ -1,0 +1,17 @@
+{% extends "basic_app/outer_body.html" %} {% block body_block %}
+<br />
+{% load my_extras %}
+<div class="jumbotron">
+    <div class="container">
+        <h1>
+            Welcome To Django: Awesome Framework!
+        </h1>
+        <br />
+    </div>
+</div>
+<div class="container">
+    <h3>Index Page</h3>
+    <h4>this is django level 4: {{ text| cutter:'8' }}</h4>
+    <h4>{{ number|add:23 }}</h4>
+</div>
+{% endblock %}
